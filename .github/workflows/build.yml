@@ -115,6 +115,6 @@ jobs:
     - name: Upload Flashable ZIP
       uses: actions/upload-artifact@v7
       with:
-        name: TanpaNama-${{ github.event.inputs.device }}-${{ github.event.inputs.target_os }}-KSU-v${{ steps.bakasu.outputs.BAKASU_VERSION_CODE }}-${{ github.run_id }}
-        path: TanpaNama_*.zip
+        name: MorphiteTest-${{ github.event.inputs.device }}-${{ github.event.inputs.target_os }}-KSU-v${{ steps.bakasu.outputs.BAKASU_VERSION_CODE }}-${{ github.run_id }}
+        path: MorphiteTest_*.zip
         compression-level: 0 # already zip-compressed, no need to re-compress
