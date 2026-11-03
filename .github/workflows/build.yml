@@ -6,7 +6,7 @@ on:
       device:
         description: 'Target Device Code'
         required: true
-        default: 'lmi'
+        default: 'munch'
         type: choice
         options:
           - alioth
@@ -39,8 +39,6 @@ on:
         default: 'both'
         options:
           - aosp
-          - miui
-          - both
 
 jobs:
   build-kernel:
